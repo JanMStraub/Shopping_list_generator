@@ -51,9 +51,32 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-      <button type="button">Add to list</button>
-      <button type="button">Download</button>
-      <button type="button">Generate</button>
+
+      <div>
+        <form action="select.html">
+          <label>Künstler(in):
+            <select name="top5" size="5">
+              <option>Heino</option>
+              <option>Michael Jackson</option>
+              <option>Tom Waits</option>
+              <option>Nina Hagen</option>
+              <option>Marianne Rosenberg</option>
+            </select>
+          </label>
+        </form>
+      </div>
+
+      <div>
+        <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+        <button type="button">Add to list</button>
+      </div>
+      
+
+      <div>
+        <button type="button">Download</button>
+        <button type="button">Generate</button>
+      </div>
+
 
       <footer class="site-footer">
         
