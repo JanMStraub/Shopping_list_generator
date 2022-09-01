@@ -1,16 +1,40 @@
 {
-    "name": [
-        "Gerolltes Leberkäse-Cordon bleu"
-    ],
-    "ingredients": [
-        "4 Scheibe/n Leberkäse",
-        "4 Scheibe/n Gouda oder Emmentaler",
-        "8 Scheibe/n Schinken",
-        "1 Ei(er)",
-        "etwas Milch",
-        "Mehl",
-        "Semmelbrösel",
-        "Salz und Pfeffer",
-        "Öl"
-    ]
+    "https://www.chefkoch.de/rezepte/1255131230975627/Traenenkuchen-der-beste-Kaesekuchen-der-Welt.html": {
+        "name": [
+            "Tränenkuchen - der beste Käsekuchen der Welt!"
+        ],
+        "ingredients": [
+            "200 g Mehl",
+            "100 g Zucker",
+            "70 g Butter",
+            "1 Ei(er)",
+            "1 TL Backpulver",
+            "500 g Magerquark",
+            "150 g Zucker",
+            "1 Pck. Vanillezucker",
+            "1 Pck. Vanillepuddingpulver",
+            "1 Ei(er)",
+            "2 Eigelb",
+            "250 ml Sahne",
+            "250 ml Milch",
+            "150 ml Öl",
+            "2 Eiweiß",
+            "6 EL Puderzucker"
+        ]
+    },
+    "https://www.chefkoch.de/rezepte/356221121015731/Putenschnitzel-mit-Brokkoli-vom-Blech.html": {
+        "name": [
+            "Putenschnitzel mit Brokkoli vom Blech"
+        ],
+        "ingredients": [
+            "600 g Putenschnitzel",
+            "1 Bio-Zitrone(n)",
+            "100 ml Olivenöl",
+            "600 g Brokkoli",
+            "2 Fleischtomate(n) (ca. 400 g)",
+            "150 g Mozzarella",
+            "1 EL Kapern",
+            "Salz und Pfeffer"
+        ]
+    }
 }

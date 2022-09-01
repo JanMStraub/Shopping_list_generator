@@ -20,44 +20,37 @@ def formating_recipe(link):
     return recipe_dict
 
 
-def recipe_to_json(link):
+def creating_json(link):
+    recipe_js = {}
     recipe_dict = formating_recipe(link)
+    recipe_js[f'{link}'] = {}
+    recipe_js[f'{link}'].update(recipe_dict)
     filename = 'recipe.json'
     with open(filename, 'w', encoding='utf-8') as f:
-        json.dump(recipe_dict, f, ensure_ascii=False, indent=4)
+        json.dump(recipe_js, f, ensure_ascii=False, indent=4)
 
 
 def update_json(link):
     recipe_dict = formating_recipe(link)
     filename = 'recipe.json'
-
     with open(filename) as f:
         recipe = json.load(f)
-
-    embed()
-    exit()
-    recipe.update(recipe_dict)
-  
-
-    with open(filename, 'w', encoding='utf-8') as f:
-        json.dump(recipe, f, ensure_ascii=False, indent=4)
-
-
-def testing_if_recipe_in_json(new_link):
-    filename = 'recipe.json'
-    _, recipe_name_new = get_recipe(new_link)
-    with open(filename) as f:
-        recipe= json.load(f)
-    for name in recipe['name']:
-        if name == recipe_name_new:
-            print(f"{name} is already in database")
+    for i in recipe.keys():
+        if i == link:
+            print('recipe already in database')
         else:
-            update_json(new_link)
-            print("hey")
-    
-testing_if_recipe_in_json('https://www.chefkoch.de/rezepte/1255131230975627/Traenenkuchen-der-beste-Kaesekuchen-der-Welt.html')
-         
-                
+            recipe[f'{link}'] = {}
+            recipe[f'{link}'].update(recipe_dict)
+
+            #with open(filename, 'w', encoding='utf-8') as f:
+            #    json.dump(recipe, f, ensure_ascii=False, indent=4)
+            
+            print(f'new recipe added')
+
+
+#creating_json('https://www.chefkoch.de/rezepte/1255131230975627/Traenenkuchen-der-beste-Kaesekuchen-der-Welt.html') 
+update_json('https://www.chefkoch.de/rezepte/356221121015731/Putenschnitzel-mit-Brokkoli-vom-Blech.html')
+     
 
 
 
